@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alaya</title>
+  <style>
+    /* Estilos básicos y responsive */
+    body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.6; }
+    header, nav, main, footer { padding:20px; }
+    nav ul { list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; }
+    nav li { margin-right:15px; }
+    nav a { text-decoration:none; color:#333; }
+    section { margin-bottom:40px; }
+    .industria-list { display:flex; flex-wrap:wrap; gap:20px; }
+    .industria-list div { flex:1 1 45%; min-width:200px; background:#f4f4f4; padding:15px; border-radius:5px; }
+    form input, form textarea, form button { display:block; width:100%; padding:10px; margin-bottom:10px; }
+    @media (max-width:600px) {
+      nav ul { flex-direction:column; }
+      .industria-list { flex-direction:column; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Soluciones</a></li>
+        <li><a href="#">Carreras</a></li>
+        <li><a href="#">Quiénes Somos</a></li>
+        <li><a href="#">Industrias</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Agenda tu reunión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="somos‑alaya">
+      <h1>Somos Alaya</h1>
+      <p>Somos una empresa de tecnología con más de 20 años de experiencia... (texto adaptado del sitio)</p>
+    </section>
+
+    <section id="como‑lo‑hacemos">
+      <h2>Cómo lo hacemos</h2>
+      <ul>
+        <li>Identificamos oportunidades mediante IA y Big Data.</li>
+        <li>Aplicamos inteligencia en la toma de decisiones.</li>
+        <li>Experiencia en industrias financieras, minería, manufactura y acuicultura.</li>
+      </ul>
+    </section>
+
+    <section id="que‑hacemos">
+      <h2>Qué hacemos</h2>
+      <ul>
+        <li>Aumentamos rentabilidad optimizando procesos clave.</li>
+        <li>Potenciamos procesos con soluciones digitales ágiles e integradas.</li>
+        <li>Desarrollamos soluciones a medida con analítica e IA.</li>
+      </ul>
+    </section>
+
+    <section id="industrias">
+      <h2>Industrias</h2>
+      <div class="industria-list">
+        <div><h3>Minería</h3><p>Descripción de minería...</p></div>
+        <div><h3>Acuícola</h3><p>Descripción acuícola...</p></div>
+        <div><h3>Manufactura</h3><p>Descripción manufactura...</p></div>
+        <div><h3>Energía</h3><p>Descripción energía...</p></div>
+        <div><h3>Gobierno</h3><p>Descripción gobierno...</p></div>
+        <div><h3>Banca</h3><p>Descripción banca...</p></div>
+      </div>
+    </section>
+
+    <section id="agenda‑reunion">
+      <h2>Agenda tu reunión</h2>
+      <form>
+        <input type="text" placeholder="Nombre" required>
+        <input type="text" placeholder="Empresa" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <textarea placeholder="Mensaje" rows="4"></textarea>
+        <button type="submit">Quiero ser contactado</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Edificio Ópera, Huérfanos 835, piso 17, oficina 1701, Santiago, Chile</p>
+    <p>Teléfono: +56 2 22470376 | Email: contacto@alaya.cl</p>
+  </footer>
+
+</body>
+</html>
